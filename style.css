@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Playfair+Display:wght@800&family=Rubik+Puddles&display=swap');
+
+body {
+    font-family: 'Comfortaa', cursive;
+    background: linear-gradient(142deg, #150F0F 0%, #9A9898 100%);
+}
+
+.bg_video {
+    display: flex;
+    width: 100%;
+    height: 40vh;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.effect_video {
+    width: 100%;
+    height: 40vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.22);
+}
+
+.bg_video video {
+    width: 100%;
+    height: 40vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.video_text {
+    z-index: 2;
+}
+
+.video_text h1 {
+    color: #827F7F;
+    font-size: 100px;
+}
+
+
+.nav-link {
+    color: white;
+}
+
+.navbar-nav .nav-link.active {
+    color: #a7a5a5;
+}
+
+.navbar-brand img {
+    width: 70px;
+}
+
+.navbar-toggler {
+    background: grey
+}
+
+.sidebar {
+    box-shadow: 3px 3px 7px #232323;
+    border-radius: 6px;
+    background: #444343;
+    color: #9A9898;
+
+}
+
+.btn-outline-secondary {
+    border-color: #232323;
+    color: black;
+}
+
+.content_row {
+    box-shadow: 3px 3px 7px #232323;
+}
+
+.card-body {
+    background: #828080;
+}
+
+.slide_text,
+.footer_text {
+    color: #9A9898;
+    margin: auto auto;
+}
+
+footer {
+    background: radial-gradient(#000 0%, #827F7F 100%);
+}
+
+.media-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call_anim {
+    animation: call 2s ease 0s infinite normal forwards;
+}
+
+@keyframes call {
+    0%,
+    100% {
+        transform: translateX(0%);
+        transform-origin: 50% 50%;
+    }
+
+    15% {
+        transform: translateX(-30px) rotate(-6deg);
+    }
+
+    30% {
+        transform: translateX(15px) rotate(6deg);
+    }
+
+    45% {
+        transform: translateX(-15px) rotate(-3.6deg);
+    }
+
+    60% {
+        transform: translateX(9px) rotate(2.4deg);
+    }
+
+    75% {
+        transform: translateX(-6px) rotate(-1.2deg);
+    }
+}
+
+@media (max-width: 755px) {
+    .carousel-indicators {
+        display: none;
+    }
+
+    .slide_text p {
+        padding-top: 15px;
+    }
+}
+
+
+/*----------- градиент для текста------------------------------------- */
+
+/*.span-p {*/
+/*    color: #a5a6aa;*/
+/*    background: linear-gradient(90deg, #000 60%, #fff);*/
+/*    -webkit-background-clip: text;*/
+/*    -webkit-text-fill-color: transparent;*/
+/*}*/
